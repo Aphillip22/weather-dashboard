@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+ 
+  </head>
+
+  <body>
+    <!--Jumbotron-->
+    <div class="jumbotron bg-secondary">
+      <h1 class="display-6">Weather Forecast</h1>
+      <hr class="my-8" />
+      <p class="lead"></p>
+    </div>
+    <!--flex container for search div-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto">
+          <div class="card-header bg-secondary rounded">
+            <div class="card-body">
+              <h4 class="card-tittle">Weather Search</h4>
+              <input type="text" id="weather-input" />
+              <button class="btn btn-primary btn" role="button" id="searchButton">Search</button>
+              <div id="forecast"></div>
+            </div>
+          </div>
+          <!--Search History-->
+          <ul role="button" class="list-group" id="search-history">
+          </ul>
+        </div>
+        <!--Weather results cards-->
+        <div class="col">
+          <div class="card text-center bg-secondary rounded" id="weather"></div>
+        </div>
+        <div class="col">
+          <div class="card text-center bg-secondary rounded" id="fiveday"></div>
+        </div>
+      </div>
+    </div>
+    <!--import Bootstrap CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--import JQuery CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <!--import script.js-->
+    <script src="script.js"></script>
+  </body>
+</html>
