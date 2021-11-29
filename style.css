@@ -1,0 +1,41 @@
+.jumbotron {
+    background-image: linear-gradient(to right,rgb(0, 140, 255), rgb(33, 33, 190));
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: .25em;
+}
+
+.uv-favorable,
+.uv-moderate,
+.uv-extreme,
+.uv-undefined {
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+/*< 4*/
+.uv-favorable {
+    background-color: rgb(43, 194, 43);
+}
+
+/*4-10*/
+.uv-moderate {
+    background-color: yellow;
+}
+
+/*>11*/
+.uv-extreme {
+    background-color: rgb(255, 148, 148);
+}
+
+.uv-undefined {
+    background-color: gray;
+}
