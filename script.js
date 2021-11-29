@@ -68,7 +68,7 @@ var createQuery = function(city) {
             //include large card for 1 day data
             $(".forecast-column").html("").append('<div class="jumbotron bg-white border border-dark rounded p-3 mt-2 todays-forecast"></div>');
             //include city name with today's date
-            $(".todays-forecast").append(`<h2 class="current-city">${data.name} <span class="current-city-date">${moment.unix(uvExtendedData?.current?.dt).format("M/DD/YYYY")}</span> <img id="weather-icon" src="${iconUrl}"/></h2>`);
+            $(".todays-forecast").append(`<h7><span class="current-city-date">${moment.unix(uvExtendedData?.current?.dt).format("dddd, MMM Do, YYYY")}</h7><h2 class="current-city">${data.name}</span> <img id="weather-icon" src="${iconUrl}"/></h2>`);
             //include current temperature converted to F
             $(".todays-forecast").append(`<p class="current-temp">Temperature: ${parseInt(uvExtendedData.current.temp * (9 / 5) +
                 32) + " &deg;F"}</p>`);
@@ -91,7 +91,7 @@ var createQuery = function(city) {
                     //create card deck and append to html
                     $(".card-deck").append(
                         //small card div including correct date, appropriate icon, temperature converted to F, & humidity
-                        `<div class="card bg-info px-2 text-white" id="${'card' + index}">
+                        `<div class="card px-2 text-white" id="${'card' + index}">
                         <h7 class="card-title">${moment.unix(day.dt).format("M/DD/YYYY")}</h7>
                         <h6 class="card-subtitle"><img id="weatherIcon" src="https://openweathermap.org/img/wn/${day.weather[0].icon}.png"/></h6>
                         <p class="card-text p-0">Temp: ${parseInt(day.temp.day * (9 / 5) +

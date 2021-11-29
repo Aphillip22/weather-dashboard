@@ -4,12 +4,23 @@
     color: whitesmoke;
 }
 
-header h1 {
-    font-size: 2em;
+.jumbotron h1 {
+    font-size: 5em;
     color: white;
     font-weight: bold;
     text-align: center;
     margin: .25em;
+}
+
+.jumbotron hr {
+    border-style:double;
+    border-width: 10px;
+}
+.search-history-container button {
+    background-color:rgb(33, 33, 190);
+}
+.card {
+    background-color: rgb(0, 140, 255);
 }
 
 .uv-favorable,
