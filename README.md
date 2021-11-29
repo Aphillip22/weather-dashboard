@@ -29,6 +29,7 @@ No contributors at this time.
 - Openweather API
 - Moment.js
 ## Links
-Github Repo: https://github.com/Aphillip22/weather-dashboard.git 
+Github Repo: https://github.com/Aphillip22/weather-dashboard.git
+Deployed Site: https://aphillip22.github.io/weather-dashboard/ 
 ## Contact
 Please reach out via Github at Aphillip22
